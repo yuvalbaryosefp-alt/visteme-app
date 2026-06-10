@@ -103,6 +103,8 @@ export const tryOnAPI = {
       timeout: 130000,
     }),
 
+  get: (id: string) => api.get(`/v1/try-on/${id}`),
+
   history: () => api.get('/v1/try-on'),
 };
 
